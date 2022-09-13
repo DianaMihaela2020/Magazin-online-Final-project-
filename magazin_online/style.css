@@ -1,0 +1,69 @@
+
+.section1, .noutati1, .calvin-klein1, .michael-kors1, .tommy-hilfiger, .boss1, .versace1, .big-star1{
+    border-top:1px solid lightgray;
+    padding-top:20px;
+}
+
+.section1 .summer{
+    border:1px dotted black;
+    padding:5px;
+    border-radius:8px;
+    font-weight:600;
+}
+
+.section1 h2{
+    font-weight:600;
+    font-family: 'Shrikhand', cursive;
+    font-family: 'Tai Heritage Pro', serif;
+}
+.section1 button{
+    margin-bottom:20px;
+    color:white;
+    background-color: rgb(94, 88, 88);
+    padding:10px;
+    border:1px solid rgb(94, 88, 88)s;
+    cursor:pointer;
+}
+
+.buy{
+    background-color: rgb(183, 149, 197);
+    border:1px solid darkgray;
+    width:100px;
+    height:50px;
+    color:black;
+    font-weight:600;
+    position:absolute;
+    top:0;
+    right:30px;
+}
+
+.buy:hover{
+    background-color:lightgray;
+    color:black;
+    cursor:pointer;
+}
+.buy2{
+    background-color: rgb(9, 112, 23);
+    border:1px solid darkgray;
+    width:150px;
+    height:40px;
+    color:white;
+    font-weight:600;
+    border-radius:5px;
+    margin-left:20px;
+}
+
+.buy2:hover{
+    background-color:lightgray;
+    color:black;
+    cursor:pointer;
+}
+.div-produs{
+    position:relative;
+    border:1px solid lightgray;
+}
+
+.title{
+    font-weight:400;
+    font-size:20px;
+}

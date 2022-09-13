@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magazin Online - ePantofi.ro</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shrikhand&family=Tai+Heritage+Pro:wght@700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- Meniu -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="index.html"><img class="img-fluid" src="./images/index.png" alt="brand"
+                style="width:100px"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="noutati.html">Noutăți</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Pantofi de damă
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="calvin-klein.html">Calvin Klein</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="michael-kors.html">Michael Kors</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="tommy-hilfiger.html">Tommy Hilfiger</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Pantofi bărbați
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="boss.html">BOSS</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="versace-jeans-couture.html">Versace Jeans Couture</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="big-star.html">BIG STAR</a>
+                    </div>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="comenzi.html">Comenzi</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="section1">
+        <div class="container-fluid">
+            <form method="post">
+                <div class="row mx-5">
+                    <div class="col-md-4">
+                        <h5 class="mb-5"><b>Date cumpăratorului:</b></h5>
+                        <label for="">Nume*</label><br>
+                        <input id="nume" required style="border:1px solid rgb(95, 90, 90); width:75%"
+                            type="text"><br><br>
+                        <label for="">Prenume*</label><br>
+                        <input id="prenume" required style="width:75%; border:1px solid rgb(95, 90, 90)"
+                            type="text"><br><br>
+                        <label for="">Email*</label><br>
+                        <input id="email" required style="width:75%; border:1px solid rgb(95, 90, 90)"
+                            type="email"><br><br>
+                        <label for="">Telefon*</label><br>
+                        <input id="telefon" required style="width:75%; border:1px solid rgb(95, 90, 90)"
+                            type="phone"><br><br>
+                        <label for="">Adresa*</label><br>
+                        <input id="adresa" required style="width:75%; border:1px solid rgb(95, 90, 90)"
+                            type="phone"><br><br>
+                        <label for="">Judet*</label><br>
+                        <input id="judet" required style="width:75%; border:1px solid rgb(95, 90, 90)"
+                            type="phone"><br><br>
+                        <label for="">Oras*</label><br>
+                        <input id="oras" required style="width:75%; border:1px solid rgb(95, 90, 90)"
+                            type="phone"><br><br>
+                    </div>
+                    <div class="col-md-3">
+                        <h5 class="mb-5"><b>Selectare metodă de plată:</b></h5>
+                        <input checked type="radio" name="plata" class="mr-2"><label for="">
+                            <h5>Plata cu cardul</h5>
+                        </label><br>
+                        <label for="">Numar card</label><br>
+                        <input id="numar_card" required type="text"><br><br>
+                        <label for="">LL/AA</label><br>
+                        <input id="data" required type="text" style="width:65%"><br><br>
+                        <label for="">CVV</label><br>
+                        <input id="cvv" required type="text" style="width:65%"><br><br>
+                        <input type="radio" name="plata" class="mr-2"><label for="">
+                            <h5>Plata la livrare</h5>
+                        </label>
+                        <h5 class="mb-5 mt-5"><b>Selectare metodă de livrare:</b></h5>
+                        <input checked type="radio" name="courier" class="mr-3"><label for="">
+                            <h5><img src="./images/fan-courier.png" class="mr-3" alt="" width="50px">
+                                Fan Courier - 6 LEI</h5>
+                        </label><br>
+                        <input type="radio" name="courier" class="mr-2 mr-3"><label for="">
+                            <h5><img src="./images/gls.png" alt="" width="50px" class="mr-3">
+                                GLS - 6 LEI</h5>
+                        </label><br><br>
+                        <p>Taxă de livrare - Fan courier (firma de curierat).
+                            <br><br>
+                            Livrare în 2-3 zile lucrătoare.
+
+                    </div>
+                    <div class="col-md-4">
+                        <h5 class="mb-5"><b>Sumar: </b><span id="numar_produse"></span></h5>
+                        <div class="row pb-5" id="produse">
+
+                        </div>
+                        <label for="" style="width:75%"><input checked disabled type="checkbox"> Sunt de acord cu
+                            prelucrarea
+                            datelor
+                            cu
+                            caracter personal.
+                        </label><br><br>
+                        <input onclick="finalizeaza_comanda()" class="bg-success text-white mb-5" type="submit"
+                            value="Finalizează comanda" style="width:180px; height:50px; border:2px solid
+                            rgb(134, 128, 128); cursor:pointer;">
+                        <button onclick="golire()" class="bg-success text-white mb-5" style="width:180px; height:50px; border:2px solid
+                            rgb(134, 128, 128); cursor:pointer;">Golire cos</button>
+                    </div>
+
+                </div>
+        </div>
+        </div>
+        </form>
+    </section>
+    <footer class="text-center bg-success py-3 text-white my-0">
+        <h6><b>Copyright &copy; 2022 - ePantofi.ro </b></h6>
+    </footer>
+    <!-- Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+    <script src="products.js"></script>
+    <script>
+        function finalizeaza_comanda() {
+            var nume, prenume, email, telefon, adresa, judet, oras, numar_card, data, cvv;
+            nume = document.getElementById('nume').value;
+            prenume = document.getElementById('prenume').value;
+            email = document.getElementById('email').value;
+            telefon = document.getElementById('telefon').value;
+            adresa = document.getElementById('adresa').value;
+            judet = document.getElementById('judet').value;
+            oras = document.getElementById('oras').value;
+            numar_card = document.getElementById('numar_card').value;
+            data = document.getElementById('data').value;
+            cvv = document.getElementById('cvv').value;
+
+            if (nume.length == 0 || prenume.length == 0 || email.length == 0 || telefon.length == 0 || adresa == null ||
+                judet.length == 0 || oras.length == 0 || numar_card.length == 0 || data.length == 0 || cvv.length ==
+                0) {
+                alert('Vă rugăm completați toate câmpurile!');
+            } else {
+                alert('Comanda a fost trimisa cu succes!');
+                localStorage.clear();
+                window.location.href = "index.html";
+            }
+
+        }
+
+        function golire() {
+            localStorage.clear();
+            location.reload();
+        }
+        if (localStorage.getItem('produse') != null) {
+            var a = [];
+            a = JSON.parse(localStorage.getItem('produse'));
+            var i;
+            var j;
+            document.getElementById('numar_produse').innerHTML = "Aveti " + a.length + " produse adăugate.";
+            for (i = 0; i < a.length; i++)
+                for (j = 0; j < products.length; j++)
+                    if (products[j].id == a[i]) {
+                        const currentDiv = document.getElementById("produse");
+                        const div2 = document.createElement("div");
+                        const div3 = document.createElement("div");
+                        const div4 = document.createElement("div");
+                        const div5 = document.createElement("div");
+                        div2.classList.add('col-md-3');
+                        div3.classList.add('col-md-4', 'mt-5', 'ml-4');
+                        div4.classList.add('col-md-2', 'mt-5');
+                        div5.classList.add('col-md-2', 'mt-5');
+                        const br = document.createElement("br");
+                        const img = document.createElement("img");
+                        const p1 = document.createElement("h4");
+                        const p2 = document.createElement("h4");
+                        img.src = products[j].img;
+                        img.style.width = "100px";
+                        p1.textContent = products[j].nume;
+                        p2.textContent = products[j].pret + "$";
+                        div2.appendChild(img);
+                        div3.appendChild(p1);
+                        div4.appendChild(p2);
+                        currentDiv.appendChild(div2);
+                        currentDiv.appendChild(div3);
+                        currentDiv.appendChild(div4);
+                    }
+        }
+    </script>
+
+</body>
+
+</html>

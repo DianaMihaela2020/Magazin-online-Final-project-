@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magazin Online - ePantofi.ro</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+</head>
+
+<body>
+    <!-- Meniu -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="index.html"><img class="img-fluid" src="./images/index.png" alt="brand"
+                style="width:100px"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="noutati.html">Noutăți</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Pantofi de damă
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="calvin-klein.html">Calvin Klein</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="michael-kors.html">Michael Kors</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="tommy-hilfiger.html">Tommy Hilfiger</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown active">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Pantofi bărbați
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="boss.html">BOSS</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="versace-jeans-couture.html">Versace Jeans Couture</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="big-star.html">BIG STAR</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="comenzi.html">Comenzi</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <section class="tommy-hilfiger1 my-0 py-0">
+        <div class="container-fluid" style="background-color: #e5e5e5">
+            <div class="row d-flex justify-content-center">
+                <div class="col-md-10">
+                    <h1 class="text-center py-3">Versace Jeans Couture</h1>
+                    <div class="row" id="div_product6">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="text-center bg-success py-3 text-white my-0">
+        <h6><b>Copyright &copy; 2022 - ePantofi.ro </b></h6>
+    </footer>
+    <!-- Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+    <script src="products.js"></script>
+    <script>
+        var i;
+        for (i = 0; i <= products.length; i++)
+            if (products[i].nume == "Versace Jeans Couture") {
+                const
+                    currentDiv = document.getElementById("div_product6");
+                const div2 = document.createElement("div");
+                const
+                    div3 = document.createElement("div");
+                const br = document.createElement("br");
+                const
+                    img = document.createElement("img");
+                const h4 = document.createElement("h4");
+                const
+                    select = document.createElement("select");
+                select.classList.add('ml-3');
+                const
+                    option1 = document.createElement("option");
+                const option2 = document.createElement("option");
+                const
+                    option3 = document.createElement("option");
+                const option4 = document.createElement("option");
+                const
+                    option5 = document.createElement("option");
+                const option6 = document.createElement("option");
+                const
+                    option7 = document.createElement("option");
+                const option8 = document.createElement("option");
+                option1.textContent = "Alege mărimea";
+                option2.textContent = "38";
+                option3.textContent = "39";
+                option4.textContent = "40";
+                option5.textContent = "41";
+                option6.textContent = "42";
+                option7.textContent = "43";
+                option8.textContent = "44";
+                select.appendChild(option1);
+                select.appendChild(option2);
+                select.appendChild(option3);
+                select.appendChild(option4);
+                select.appendChild(option5);
+                select.appendChild(option6);
+                select.appendChild(option7);
+                select.appendChild(option8);
+                const
+                    button = document.createElement("button");
+                const button2 = document.createElement("button");
+                button.textContent = products[i].pret + "$";
+                button2.textContent = "Adaugă în coș";
+                let item = products[i].id;
+                button2.addEventListener("click", function (e) {
+                    var new_data = item;
+                    if (localStorage.getItem('produse') == null)
+                        localStorage.setItem('produse', '[]');
+                    var old_data = JSON.parse(localStorage.getItem('produse'));
+                    old_data.push(new_data);
+                    localStorage.setItem('produse', JSON.stringify(old_data));
+                    alert("Produsul a fost adaugat cu succes!");
+                }, false);
+                h4.textContent = products[i].descriere;
+                img.src = products[i].img;
+                div3.classList.add('col-md-4', 'my-5', 'main-div');
+                div2.classList.add('text-center', 'div-produs');
+                img.classList.add('img-fluid');
+                h4.classList.add('text-center', 'mt-2', 'title');
+                img.style.width = "400px";
+                button.classList.add('mt-3', 'buy');
+                button2.classList.add('mt-3', 'buy2');
+                div2.appendChild(img);
+                div2.appendChild(br);
+                div2.appendChild(button);
+                div3.appendChild(div2);
+                div3.appendChild(h4);
+                div3.appendChild(select);
+                div3.appendChild(button2);
+                currentDiv.appendChild(div3);
+            }
+    </script>
+</body>
+
+</html>
